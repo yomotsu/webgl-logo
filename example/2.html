@@ -43,7 +43,7 @@ directionalLight.position.set( .5, 1, .5 ).normalize();
 scene.add( directionalLight );
 
 loader = new THREE.JSONLoader();
-loader.load( '../webgl.js', function( geometry, materials ) {
+loader.load( '../webgl-ie.js', function( geometry, materials ) {
   mesh = new THREE.Mesh(
     geometry,
     new THREE.MeshFaceMaterial( materials )
